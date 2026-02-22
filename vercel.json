@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/framer-site/:path*",
-            "destination": "https://clear-diversity-387417.framer.app/:path*"
+            "source": "/((?!assets/).*)",
+            "destination": "/index.html"
         }
     ]
 }
