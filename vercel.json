@@ -1,18 +1,8 @@
 {
-    "buildCommand": "npm run build",
-    "outputDirectory": "dist",
-    "framework": "vite",
-    "routes": [
+    "rewrites": [
         {
-            "src": "/framer-site/(.*)",
-            "dest": "https://clear-diversity-387417.framer.app/$1"
-        },
-        {
-            "handle": "filesystem"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/index.html"
+            "source": "/framer-site/:path*",
+            "destination": "https://clear-diversity-387417.framer.app/:path*"
         }
     ]
 }
